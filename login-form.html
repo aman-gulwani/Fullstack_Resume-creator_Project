@@ -6,142 +6,58 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: lightgrey;
-    display: flex;
-    flex-direction: column;
-}
-
-header h1 {
-    text-transform: uppercase;
-    color: red;
-    font-size: 80px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.form-template1 {
-    width: 300px;
-    height: 350px;
-    background-color: #fff;
-    margin: 30px;
-    margin-top: 60px;
-}
-
-.form-header-t1 {
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to right, orange, red);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-header-t1 h1 {
-    color: white;
-    font-size: 20px;
-    padding: 10px 0px;
-}
-
-.form-header-t1 .social i {
-    color: white;
-    font-size: 20px;
-    padding: 10px 10px;
-}
-
-.form-container-t1 {
-    padding: 20px;
-}
-
-input[type='email'] {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid grey;
-    padding: 10px 0px;
-    width: 100%;
-}
-
-#email:hover {
-    color: #3498db;
-    border-color: #3498db;
-}
-
-input[type='password'] {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid grey;
-    padding: 10px 0px;
-    width: 100%;
-}
-
-#pwd:hover {
-    color: #3498db;
-    border-color: #3498db;
-}
-
-.form-container-t1 p {
-    font-size: 12px;
-    color: gray;
-    padding: 20px 0px;
-    text-align: right;
-}
-
-.form-container-t1 p b {
-    color: black;
-}
-
-input[type='submit'] {
-    outline: none;
-    border: none;
-    border-radius: 20px;
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 30px;
-}
-
-.form-container-t1 p#p2 {
-    display: inline-block;
-    margin-left: 15px;
-}
-
-    </style>
-</head>
-<body>
-    <div class="form-template1">
-        <div class="form-header-t1">
-            <h1>Log in</h1>
-            <div class="social">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-google-plus"></i>
+    <link rel="stylesheet" href="login-form.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/large_10.png">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#heade">Home</a></li>
+                        <li><a href="#foot">About</a></li>
+                        <li><a href="#foot">Contact</a></li>
+                        <li><a href="#">Account<i class="fa fa-user-plus"></i></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="form-container-t1">
-            <div><input type="email" name="email" id="email" placeholder="Your email"></div>
-            <div><input type="password" name="pwd" id="pwd" placeholder="Your password"></div>
-            <p>Forgot <b>password?</b></p>
-            <input type="submit" value="LOG IN">
-            <p id="p2">Don't have account? <a href="">Sign Up</a></p>
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Give your Resume<br>A New Style!</h1>
+                        <p>Success isn't always about greatness. It's about consistency.<br>Consistent hard work gains success.<br>Greatness will come.</p>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">Login</span>
+                                <span onclick="register()">Register</span>
+                                <hr id="indicator">
+                            </div>
+
+                            <form id="loginform">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn">Login</button>
+                                <a href="">Forgot Password</a>
+                            </form>
+
+                            <form id="regform">
+                                <input type="text" placeholder="Username">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-footer-t1"></div>
-    </div>
-</body>
+        <script src="login-form.js"></script>
+    </body>
 </html>
