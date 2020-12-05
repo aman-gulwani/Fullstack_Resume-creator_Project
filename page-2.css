@@ -5,7 +5,7 @@ body {
 
 .container::before {
     content:"";
-    background-image: url('images/Preview.jpg');
+    background-image: url('images/Previes.jpg');
     opacity:0.5;
     position:absolute;
     top:0;
