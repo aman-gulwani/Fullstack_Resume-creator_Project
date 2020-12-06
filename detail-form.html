@@ -25,36 +25,130 @@
             </nav>
         </div>
         <div class="com">
+            <div class="img1">
+            </div>
             <div class="row">
                 <form id="form1">
-                    <h3>CREATE ACCOUNT</h3>
-                    <input type="text" placeholder="Enter Email">
-                    <input type="text" placeholder="Enter Password">
-                    <input type="text" placeholder="Enter Password Again">
+                    <h3>PERSONAL DETAILS</h3>
+                    <hr>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="contact" placeholder="Contact no.">
+                    <input type="date" placeholder="Date Of Birth">
+
+                    <div class="gender">
+                        <h4>Gender:</h4>
+                        <input type="radio" id="male" name="gender" value="male">Male
+                        <input type="radio" id="female" name="gender" value="female">Female
+                        <input type="radio" id="other" name="gender" value="other">Other
+                    </div>
+                    <div class="state">
+                        <select name="States" id="sta" class="sta">
+                            <option value="">Select state</option>
+                            <option value="">Uttar Pradesh</option>
+                            <option value="">Arunachal Pradesh</option>
+                            <option value="">Himachal Pradesh</option>
+                        </select>
+                    
+                        <select name="" id="cit" class="cit">
+                            <option value="">Select city</option>
+                            <option value="">Agra</option>
+                            <option value="">Mathura</option>
+                            <option value="">Kanpur</option>
+                        </select>
+                    </div>
+
+                    <input type="text" placeholder="PIN no.">
                     <div class="btn-box">
                         <button type="button" id="next1" >Next</button>
                     </div>            
                 </form>
         
-                <form id="form2"> 
-                    <h3>SOCIAL LINKS</h3>
-                    <input type="text" placeholder="mediam">
-                    <input type="text" placeholder="Github">
-                    <input type="text" placeholder="Linked In">
+                <form id="form2">
+                    <h3>EXPERIENCE DETAILS</h3>
+                    <hr>
+
+                    <select name="States" id="sta" class="sta">
+                        <option value=" ">Occupation</option>
+                        <option value="">Student</option>
+                        <option value="">Front-End Developer</option>
+                        <option value="">Back-End Developer</option>
+                        <option value="">Software developer</option>
+                        <option value="">Hardware developer</option>
+                    </select>
+
+                    <select name="States" id="sta" class="exp">
+                        <option value=" ">0 Yrs</option>
+                        <option value="">1 Yrs</option>
+                        <option value="">2 Yrs</option>
+                        <option value="">3 Yrs</option>
+                        <option value="">4 Yrs</option>
+                        <option value="">5 Yrs</option>
+                        <option value="">6 Yrs</option>
+                        <option value="">7 Yrs</option>
+                    </select>
+
+                    <select name="States" id="sta" class="skill">
+                        <option value=" ">Skills of Interest</option>
+                        <option value="">Web development</option>
+                        <option value="">Java</option>
+                        <option value="">Python</option>
+                        <option value="">IOT</option>
+                    </select>     
+                    
+                    <h5>Details about Projects/Interships/Trainings:</h5>
+                    <textarea id="detail" name="detail" rows="4" cols="50" class="intern">Write here...</textarea>
+
+                    <h5>Details about Achievements/Certificates</h5>
+                    <textarea id="detail" name="detail" rows="4" cols="50" class="intern">Write here...</textarea>
+
                     <div class="btn-box">
                         <button type="button" id="back1">Back</button>
                         <button type="button" id="next2">Next</button>
-                    </div>            
+                    </div>
+
+                               
                 </form>
         
                 <form id="form3">
-                    <h3>PERSONAL INFORMATION</h3>
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="Mobile Number">
+                    <h3>EDUCATIONAL QUALIFICATION</h3>
+                    <hr>
+
+                    <select name="States" id="sta" class="skill">
+                        <option value="">Select Educational Qualification</option>
+                        <option value="">10th</option>
+                        <option value="">12th</option>
+                        <option value="">Graduate</option>
+                        <option value="">Post-Graduate</option>
+                        <option value="">PhD</option>
+                    </select>
+
+                    <select name="States" id="sta" class="skill">
+                        <option value="">Select Course</option>
+                        <option value="">B.tech</option>
+                        <option value="">B.Sc</option>
+                        <option value="">B.com</option>
+                        <option value="">BA</option>
+                        <option value="">M.tech</option>
+                        <option value="">M.Sc</option>
+                        <option value="">M.com</option>
+                        <option value="">MA</option>
+                    </select>
+
+                    <h5><span>*</span> Image should be in jpeg/png format</h5>
+                    <h5><span>*</span> Size of Image should be 300KB to 800KB</h5>
+        
+                    <input type="file" id="img" name="img" accept="image/*" class="image">
+
+                    <h3>IMAGE & DESCRIPTION</h3>
+                    <hr>
+
+                    <h5>Description in Details</h5>
+                    <textarea id="detail" name="detail" rows="4" cols="50" class="descrip">Write here...</textarea>
+
                     <div class="btn-box">
                         <button type="button" id="back2">Back</button>
-                        <button type="button" >Submit</button>
+                        <button type="button" class="final-btn" onclick="document.location=''">Final-Submit</button>
                     </div>            
                 </form>
                 <div class="step-row">

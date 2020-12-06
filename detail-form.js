@@ -1,4 +1,4 @@
-const form1 = document.getElementById('form1');
+        const form1 = document.getElementById('form1');
         const form2 = document.getElementById('form2');
         const form3 = document.getElementById('form3');
 
@@ -12,20 +12,20 @@ const form1 = document.getElementById('form1');
         next1.onclick= function(){ 
             form1.style.left = '-450px';
             form2.style.left = '40px';    
-            progress.style.width = "240px";
+            progress.style.width = "306px";
         };
         back1.onclick= function(){ 
             form1.style.left = '40px';
             form2.style.left = '450px';  
-            progress.style.width = "120px";  
+            progress.style.width = "153px";  
         };
         next2.onclick= function(){ 
             form2.style.left = '-450px';
             form3.style.left = '40px';    
-            progress.style.width = "360px";
+            progress.style.width = "460px";
         };
         back2.onclick= function(){ 
             form2.style.left = '40px';
             form3.style.left = '450px';  
-            progress.style.width = "240px";  
+            progress.style.width = "306px";  
         };
