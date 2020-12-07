@@ -12,7 +12,7 @@ body {
   background: #585c68;
   font-size: 14px;
   line-height: 22px;
-  color: black;
+  color: white;
 }
 
 .bold {
@@ -35,7 +35,7 @@ body {
 
 .resume .resume_left {
   width: 280px;
-  background: #013803;
+  background: darkslategray;
 }
 
 .resume .resume_left .resume_profile {
@@ -44,10 +44,12 @@ body {
 }
 
 .resume .resume_left .resume_profile img {
-  width: 92%;
-  height: 92%;
+  width: 90%;
+  height: 90%;
   border-radius: 50%;
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .resume .resume_left .resume_content {
@@ -59,16 +61,16 @@ body {
 }
 
 .resume .resume_left .bold {
-  color: #fff;
+  color: whitesmoke;
 }
 
 .resume .resume_left .regular {
-  color: whitesmoke;
+  color: white;
 }
 
 .resume .resume_item {
   padding: 25px 0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid whitesmoke;
 }
 
 .resume .resume_left .resume_item:last-child,
@@ -89,8 +91,8 @@ body {
 .resume .resume_left ul li .icon {
   width: 35px;
   height: 35px;
-  background:lightgray;
-  color: #013803;
+  background: white;
+  color: black;
   border-radius: 50%;
   margin-right: 15px;
   font-size: 16px;
@@ -138,22 +140,22 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: rgb(0, 255, 55);
+  background: black;
 }
 
 .resume .resume_left .resume_social .semi-bold {
-  color: #fff;
+  color: white;
   margin-bottom: 3px;
 }
 
 .resume .resume_right {
   width: 520px;
-  background: radial-gradient(rgb(133, 160, 160),rgb(238, 248, 247));
+  background: radial-gradient(rgb(48, 48, 48), black);
   padding: 25px;
 }
 
 .resume .resume_right .bold {
-  color: black;
+  color: white;
 
 }
 
@@ -190,7 +192,7 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid #013803;
+  border: 2px solid whitesmoke;
 }
 
 .resume .resume_right .resume_work ul li:after,
@@ -201,7 +203,7 @@ body {
   left: -21px;
   width: 2px;
   height: 275px;
-  background: #013803;
+  background: whitesmoke;
 }
 
 .resume .resume_right .resume_hobby ul {
@@ -212,10 +214,10 @@ body {
 .resume .resume_right .resume_hobby ul li {
   width: 80px;
   height: 80px;
-  border: 2px solid #013803;
+  border: 2px solid whitesmoke;
   border-radius: 50%;
   position: relative;
-  color: #013803;
+  color: whitesmoke;
 }
 
 .resume .resume_right .resume_hobby ul li i {
@@ -229,7 +231,7 @@ body {
   right: -52px;
   width: 50px;
   height: 2px;
-  background: #013803;
+  background: whitesmoke;
 }
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
@@ -237,11 +239,11 @@ body {
 }
 
 .resume_item img {
-    width: 450px;
-    margin-top: -40px;
-    margin-left: 15px;
+    width: 520px;
+    margin-top: -50px;
+    margin-left: -25px;
     height: 220px;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
  
 p {
