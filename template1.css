@@ -50,16 +50,17 @@ img {
 }
 
 .right-side p {
-    font-size: 15px;
+    font-size: 17px;
     text-align: justify;
 }
 
 li {
     margin-bottom: 10px;
     text-align: justify;
-
+    font-size: 16px;
 }
 
 .td1 ul li {
+
     padding-bottom: 10px;
 }
