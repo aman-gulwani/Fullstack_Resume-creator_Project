@@ -47,7 +47,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .resume .resume_left .resume_content {
@@ -112,7 +112,7 @@ body {
 .resume .resume_left .resume_skills ul li {
   display: flex;
   margin-bottom: 10px;
-  color: ;
+  color: black;
   justify-content: space-between;
   align-items: center;
 }
