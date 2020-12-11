@@ -19,11 +19,8 @@ const form = document.getElementById('form');
                 {
                     showError(username,"Username can not be blank");
                 }
-                else
-                {
-                    showSuccess(username);
-                } 
-                if( emailValue ==='')
+                
+                else if( emailValue ==='')
                 {
                     showError(email,"Email Id can not be blank");
                 }
@@ -31,21 +28,13 @@ const form = document.getElementById('form');
                 {
                     showError(email,"Email is not Valid");
                 }
-                else
-                {
-                    showSuccess(email);
-                }    
             
-                if( password1Value ==='')
+                else if( password1Value ==='')
                 {
                     showError(password1,"Password can not be blank");
                 }
-                else
-                {
-                    showSuccess(password1);
-                }
             
-                if( password2Value ==='')
+                else if( password2Value ==='')
                 {
                     showError(password2,"Password can not be blank");
                 }
@@ -71,6 +60,8 @@ const form = document.getElementById('form');
             {
                 const formControl = input.parentNode;
                 formControl.className = 'form-control success';
+                location.href="detail-form.html";
+
             }
             
             function isEmailValid(email1){

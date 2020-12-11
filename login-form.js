@@ -20,12 +20,8 @@
                 {
                     showError(email,"Email is not Valid");
                 }
-                else
-                {
-                    showSuccess(email);
-                }    
             
-                if( password1Value ==='')
+                else if( password1Value ==='')
                 {
                     showError(password1,"Password can not be blank");
                 }
@@ -49,6 +45,7 @@
             {
                 const formControl = input.parentNode;
                 formControl.className = 'form-control success';
+                location.href="detail-form.html";
             }
             
             function isEmailValid(email1){
